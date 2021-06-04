@@ -1,0 +1,439 @@
+25-May-2021 14:41:02.982 심각 [http-nio-8121-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 19
+
+16: 	Question question = null;
+17: 	
+18: 	FormDAO fdao = FormDAO.getInstance();
+19: 	int form_id = Integer.parseInt(LocalEncrypter.returnDecryptCode(request.getParameter("f")));
+20: 
+21: 	final String QUESTION_TYPE = "type";
+22: 	final String OPTION_COUNT = "option_count";
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at sun.misc.CharacterDecoder.decodeBuffer(CharacterDecoder.java:187)
+	at model.encrypt.LocalEncrypter.returnDecryptCode(LocalEncrypter.java:40)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:136)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 14:45:41.184 심각 [http-nio-8121-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /makeForm.jsp at line 20
+
+17: 			<form id="form" method="post" action="formPro.jsp">
+18: 				<h3 style="text-align: center;">설문 항목 추가</h3>
+19: 				<div class="questions" id="questions"></div>
+20: 				<input type="hidden" name="form" value="<%=Integer.parseInt(LocalEncrypter.returnDecryptCode(request.getParameter("f")))%>">
+21: 				<input type="hidden" name="num_of_question" value="0">
+22: 				<input type="hidden" name="num_of_index" value="0">
+23: 				<input type="button" class="btn_addQuestion" value="새 질문" onClick="addQuestion()">
+
+
+Stacktrace:] with root cause
+ javax.crypto.BadPaddingException: Given final block not properly padded
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:989)
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:845)
+	at com.sun.crypto.provider.DESedeCipher.engineDoFinal(DESedeCipher.java:294)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2165)
+	at model.encrypt.LocalEncrypter.decrypt(LocalEncrypter.java:54)
+	at model.encrypt.LocalEncrypter.returnDecryptCode(LocalEncrypter.java:40)
+	at org.apache.jsp.makeForm_jsp._jspService(makeForm_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 14:46:40.054 심각 [http-nio-8121-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 19
+
+16: 	Question question = null;
+17: 	
+18: 	FormDAO fdao = FormDAO.getInstance();
+19: 	int form_id = Integer.parseInt(LocalEncrypter.returnDecryptCode(request.getParameter("form")));
+20: 
+21: 	final String QUESTION_TYPE = "type";
+22: 	final String OPTION_COUNT = "option_count";
+
+
+Stacktrace:] with root cause
+ javax.crypto.IllegalBlockSizeException: Input length must be multiple of 8 when decrypting with padded cipher
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:934)
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:845)
+	at com.sun.crypto.provider.DESedeCipher.engineDoFinal(DESedeCipher.java:294)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2165)
+	at model.encrypt.LocalEncrypter.decrypt(LocalEncrypter.java:54)
+	at model.encrypt.LocalEncrypter.returnDecryptCode(LocalEncrypter.java:40)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:136)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 14:57:42.388 심각 [http-nio-8121-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /makeForm.jsp at line 20
+
+17: 			<form id="form" method="post" action="formPro.jsp">
+18: 				<h3 style="text-align: center;">설문 항목 추가</h3>
+19: 				<div class="questions" id="questions"></div>
+20: 				<input type="hidden" name="form" value="<%=Integer.parseInt(request.getParameter("f"))%>">
+21: 				<input type="hidden" name="num_of_question" value="0">
+22: 				<input type="hidden" name="num_of_index" value="0">
+23: 				<input type="button" class="btn_addQuestion" value="새 질문" onClick="addQuestion()">
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: For input string: "OfsYPCcZUr8="
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.makeForm_jsp._jspService(makeForm_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 14:57:58.845 심각 [http-nio-8121-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /makeForm.jsp at line 20
+
+17: 			<form id="form" method="post" action="formPro.jsp">
+18: 				<h3 style="text-align: center;">설문 항목 추가</h3>
+19: 				<div class="questions" id="questions"></div>
+20: 				<input type="hidden" name="form" value="<%=Integer.parseInt(request.getParameter("f"))%>">
+21: 				<input type="hidden" name="num_of_question" value="0">
+22: 				<input type="hidden" name="num_of_index" value="0">
+23: 				<input type="button" class="btn_addQuestion" value="새 질문" onClick="addQuestion()">
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: For input string: "7I3eCHGAlwg="
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.makeForm_jsp._jspService(makeForm_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 14:59:47.043 심각 [http-nio-8121-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 19
+
+16: 	Question question = null;
+17: 	
+18: 	FormDAO fdao = FormDAO.getInstance();
+19: 	int form_id = Integer.parseInt(LocalEncrypter.returnDecryptCode(request.getParameter("form")));
+20: 
+21: 	final String QUESTION_TYPE = "type";
+22: 	final String OPTION_COUNT = "option_count";
+
+
+Stacktrace:] with root cause
+ javax.crypto.BadPaddingException: Given final block not properly padded
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:989)
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:845)
+	at com.sun.crypto.provider.DESedeCipher.engineDoFinal(DESedeCipher.java:294)
+	at javax.crypto.Cipher.doFinal(Cipher.java:2165)
+	at model.encrypt.LocalEncrypter.decrypt(LocalEncrypter.java:54)
+	at model.encrypt.LocalEncrypter.returnDecryptCode(LocalEncrypter.java:40)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:136)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 15:50:28.495 심각 [http-nio-8121-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /manageSurvey.jsp at line 141
+
+138:             %>	
+139:             <tr>
+140:             	<td><%=iPageNo+no%></td>
+141:                 <td><%=rs1.getString("TITLE")%></td>
+142:                 <td>%</td>
+143: 				<td><input type="button" value="결과다운(excel)" onclick="location.href='#'"></td>
+144:             </tr>
+
+
+Stacktrace:] with root cause
+ java.sql.SQLException: Column 'TITLE' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5206)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingResultSet.getString(DelegatingResultSet.java:266)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingResultSet.getString(DelegatingResultSet.java:266)
+	at org.apache.jsp.manageSurvey_jsp._jspService(manageSurvey_jsp.java:265)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 15:51:48.832 심각 [http-nio-8121-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /manageSurvey.jsp at line 141
+
+138:             %>	
+139:             <tr>
+140:             	<td><%=iPageNo+no%></td>
+141:                 <td><%=rs1.getString("title")%></td>
+142:                 <td>%</td>
+143: 				<td><input type="button" value="결과다운(excel)" onclick="location.href='#'"></td>
+144:             </tr>
+
+
+Stacktrace:] with root cause
+ java.sql.SQLException: Column 'title' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:998)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1073)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5206)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingResultSet.getString(DelegatingResultSet.java:266)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingResultSet.getString(DelegatingResultSet.java:266)
+	at org.apache.jsp.manageSurvey_jsp._jspService(manageSurvey_jsp.java:265)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 21:32:07.969 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+25-May-2021 21:32:08.015 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+25-May-2021 21:32:08.023 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+25-May-2021 21:32:08.024 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 212 ms
+25-May-2021 21:32:08.034 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+25-May-2021 21:32:08.034 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+25-May-2021 21:32:08.037 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+25-May-2021 21:32:08.324 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-May-2021 21:32:08.351 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 314 ms
+25-May-2021 21:32:08.351 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+25-May-2021 21:32:08.503 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-May-2021 21:32:08.504 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 153 ms
+25-May-2021 21:32:08.504 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+25-May-2021 21:32:08.644 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-May-2021 21:32:08.644 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 140 ms
+25-May-2021 21:32:08.646 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+25-May-2021 21:32:08.649 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 624 ms
+25-May-2021 21:44:30.083 심각 [http-nio-8121-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /downloadEx.jsp at line 30
+
+27: String columns2 = "*";
+28: if (where2 != null) {
+29: 	dbtest dbt = dbtest.getInstance();
+30: 	boolean result = dbt.XLS(table2, columns2, where2);
+31: 	//실제 파일을 생성해 줄 메소드 호출
+32: 
+33: 	if (result == true) {
+
+
+Stacktrace:] with root cause
+ java.lang.ClassNotFoundException: org.apache.poi.hssf.usermodel.HSSFWorkbook
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1335)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1163)
+	at model.dbtest.dbtest.XLS(dbtest.java:32)
+	at org.apache.jsp.downloadEx_jsp._jspService(downloadEx_jsp.java:145)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+25-May-2021 21:47:28.896 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+25-May-2021 21:47:28.945 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+25-May-2021 21:47:28.957 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+25-May-2021 21:47:28.959 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 222 ms
+25-May-2021 21:47:28.968 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+25-May-2021 21:47:28.968 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+25-May-2021 21:47:28.971 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+25-May-2021 21:47:31.043 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-May-2021 21:47:31.068 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,097 ms
+25-May-2021 21:47:31.069 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+25-May-2021 21:47:32.894 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-May-2021 21:47:32.895 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,826 ms
+25-May-2021 21:47:32.895 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+25-May-2021 21:47:34.600 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-May-2021 21:47:34.601 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,706 ms
+25-May-2021 21:47:34.602 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+25-May-2021 21:47:34.605 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5646 ms

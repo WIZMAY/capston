@@ -1,0 +1,909 @@
+07-May-2021 16:40:57.361 심각 [http-nio-8121-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 41
+
+38: 		int index = Integer.parseInt(request.getParameter("index" + i));
+39: 		title = request.getParameter(MAIN_TITLE + index);
+40: 		q_type = request.getParameter(QUESTION_TYPE + index);
+41: 		switch (q_type) {
+42: 		case "multiple":
+43: 			option_c = request.getParameter(OPTION_COUNT + index);
+44: 			options = new String[Integer.parseInt(option_c)];
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:153)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:41:31.116 심각 [http-nio-8121-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 82
+
+79: 		out.println(options[i]);
+80: 	}
+81: 	out.println(question_c);
+82: 	for(int j = 0; j < questions.length;j++){
+83: 		out.println(questions[j]);
+84: 	}
+85: 	out.println(mul_res);
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:194)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:44:05.210 심각 [http-nio-8121-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 83
+
+80: 		out.println(options[i]);
+81: 	}
+82: 	out.println(question_c);
+83: 	for (int j = 0; j < questions.length; j++) {
+84: 		out.println(questions[j]);
+85: 	}
+86: 	out.println(mul_res);
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:195)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:45:15.643 심각 [http-nio-8121-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 42
+
+39: 		title = request.getParameter(MAIN_TITLE + index);
+40: 		q_type = request.getParameter(QUESTION_TYPE + index);
+41: 		
+42: 		switch (q_type) {
+43: 		case "multiple":
+44: 			option_c = request.getParameter(OPTION_COUNT + index);
+45: 			options = new String[Integer.parseInt(option_c)];
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:154)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:45:27.074 심각 [http-nio-8121-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 83
+
+80: 		out.println(options[i]);
+81: 	}
+82: 	out.println(question_c);
+83: 	for (int j = 0; j < questions.length; j++) {
+84: 		out.println(questions[j]);
+85: 	}
+86: 	out.println(mul_res);
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:195)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:45:36.980 심각 [http-nio-8121-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 42
+
+39: 		title = request.getParameter(MAIN_TITLE + index);
+40: 		q_type = request.getParameter(QUESTION_TYPE + index);
+41: 		
+42: 		switch (q_type) {
+43: 		case "multiple":
+44: 			option_c = request.getParameter(OPTION_COUNT + index);
+45: 			options = new String[Integer.parseInt(option_c)];
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:154)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:46:40.377 심각 [http-nio-8121-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 42
+
+39: 		title = request.getParameter(MAIN_TITLE + index);
+40: 		q_type = request.getParameter(QUESTION_TYPE + index);
+41: 		
+42: 		switch (q_type) {
+43: 		case "multiple":
+44: 			option_c = request.getParameter(OPTION_COUNT + index);
+45: 			options = new String[Integer.parseInt(option_c)];
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:154)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:46:49.366 심각 [http-nio-8121-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 42
+
+39: 		title = request.getParameter(MAIN_TITLE + index);
+40: 		q_type = request.getParameter(QUESTION_TYPE + index);
+41: 		
+42: 		switch (q_type) {
+43: 		case "multiple":
+44: 			option_c = request.getParameter(OPTION_COUNT + index);
+45: 			options = new String[Integer.parseInt(option_c)];
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:154)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 16:47:39.000 심각 [http-nio-8121-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 79
+
+76: 	out.println(title);
+77: 	out.println(q_type);
+78: 	out.println(option_c);
+79: 	for (int i = 0; i < options.length; i++) {
+80: 		out.println(options[i]);
+81: 	}/*
+82: 	out.println(question_c);
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:191)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 20:22:50.466 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 20:22:50.511 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:22:50.518 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 20:22:50.519 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 216 ms
+07-May-2021 20:22:50.529 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 20:22:50.529 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 20:22:50.532 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 20:22:50.813 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:22:50.839 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 307 ms
+07-May-2021 20:22:50.839 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 20:22:50.980 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:22:50.982 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 143 ms
+07-May-2021 20:22:50.982 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 20:22:51.122 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:22:51.123 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 141 ms
+07-May-2021 20:22:51.124 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:22:51.127 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 607 ms
+07-May-2021 20:24:24.495 심각 [http-nio-8121-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 61
+
+58: 	}
+59: 	
+60: 	for (int i = 0; i < options.length; i++) {
+61: 		int o_id = dao.insertOption(options[i]);
+62: 		
+63: 		out.print(o_id);
+64: 	}
+
+
+Stacktrace:] with root cause
+ java.lang.RuntimeException: Parameter number 2 is not an OUT parameter
+	at model.question.QuestionDAO.insertOption(QuestionDAO.java:114)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:175)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 20:33:27.126 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 20:33:27.171 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:33:27.179 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 20:33:27.180 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 207 ms
+07-May-2021 20:33:27.189 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 20:33:27.189 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 20:33:27.192 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 20:33:27.469 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:33:27.493 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 301 ms
+07-May-2021 20:33:27.493 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 20:33:27.635 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:33:27.636 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 143 ms
+07-May-2021 20:33:27.636 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 20:33:27.773 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:33:27.774 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 138 ms
+07-May-2021 20:33:27.775 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:33:27.778 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 598 ms
+07-May-2021 20:34:03.269 심각 [http-nio-8121-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [javax.servlet.ServletException: java.lang.Error: Unresolved compilation problems: 
+	cstmt cannot be resolved to a variable
+	cstmt cannot be resolved
+	cstmt cannot be resolved to a variable
+] with root cause
+ java.lang.Error: Unresolved compilation problems: 
+	cstmt cannot be resolved to a variable
+	cstmt cannot be resolved
+	cstmt cannot be resolved to a variable
+
+	at model.question.QuestionDAO.insertOption(QuestionDAO.java:126)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:175)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 20:35:24.368 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 20:35:24.413 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:35:24.421 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 20:35:24.421 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 206 ms
+07-May-2021 20:35:24.431 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 20:35:24.431 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 20:35:24.434 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 20:35:24.708 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:35:24.732 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 298 ms
+07-May-2021 20:35:24.732 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 20:35:24.877 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:35:24.878 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 146 ms
+07-May-2021 20:35:24.878 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 20:35:25.014 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:35:25.015 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 137 ms
+07-May-2021 20:35:25.016 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:35:25.019 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 597 ms
+07-May-2021 20:38:37.668 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 20:38:37.713 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:38:37.721 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 20:38:37.722 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 206 ms
+07-May-2021 20:38:37.731 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 20:38:37.731 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 20:38:37.734 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 20:38:38.008 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:38:38.033 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 299 ms
+07-May-2021 20:38:38.033 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 20:38:38.173 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:38:38.174 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 141 ms
+07-May-2021 20:38:38.174 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 20:38:38.314 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:38:38.315 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 141 ms
+07-May-2021 20:38:38.316 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:38:38.319 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 597 ms
+07-May-2021 20:39:03.288 심각 [http-nio-8121-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.RuntimeException: Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate() or Connection.prepareStatement().] with root cause
+ java.lang.RuntimeException: Generated keys not requested. You need to specify Statement.RETURN_GENERATED_KEYS to Statement.executeUpdate() or Connection.prepareStatement().
+	at model.question.QuestionDAO.insertOption(QuestionDAO.java:122)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:175)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 20:44:55.128 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 20:44:55.172 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:44:55.180 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 20:44:55.181 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 204 ms
+07-May-2021 20:44:55.190 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 20:44:55.190 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 20:44:55.193 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 20:44:55.466 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:44:55.490 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 297 ms
+07-May-2021 20:44:55.490 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 20:44:55.632 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:44:55.633 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 143 ms
+07-May-2021 20:44:55.633 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 20:44:55.773 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:44:55.774 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 141 ms
+07-May-2021 20:44:55.775 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:44:55.778 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 597 ms
+07-May-2021 20:58:55.979 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 20:58:56.023 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:58:56.031 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 20:58:56.032 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 207 ms
+07-May-2021 20:58:56.041 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 20:58:56.041 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 20:58:56.044 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 20:58:56.316 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:58:56.340 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 296 ms
+07-May-2021 20:58:56.340 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 20:58:56.482 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:58:56.483 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 143 ms
+07-May-2021 20:58:56.483 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 20:58:56.620 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 20:58:56.623 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 140 ms
+07-May-2021 20:58:56.624 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 20:58:56.627 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 595 ms
+07-May-2021 20:59:27.607 심각 [http-nio-8121-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 31 in the jsp file: /formPro.jsp
+Type mismatch: cannot convert from null to int
+28: 	String title = null;
+29: 	String q_type = null;
+30: 	String q_title = null;
+31: 	int question_c = null;
+32: 	String[] questions = null;
+33: 	int option_c = null;
+34: 	String[] options = null;
+
+
+An error occurred at line: 33 in the jsp file: /formPro.jsp
+Type mismatch: cannot convert from null to int
+30: 	String q_title = null;
+31: 	int question_c = null;
+32: 	String[] questions = null;
+33: 	int option_c = null;
+34: 	String[] options = null;
+35: 	String mul_res = null;
+36: 	String necessary = null;
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 31 in the jsp file: /formPro.jsp
+Type mismatch: cannot convert from null to int
+28: 	String title = null;
+29: 	String q_type = null;
+30: 	String q_title = null;
+31: 	int question_c = null;
+32: 	String[] questions = null;
+33: 	int option_c = null;
+34: 	String[] options = null;
+
+
+An error occurred at line: 33 in the jsp file: /formPro.jsp
+Type mismatch: cannot convert from null to int
+30: 	String q_title = null;
+31: 	int question_c = null;
+32: 	String[] questions = null;
+33: 	int option_c = null;
+34: 	String[] options = null;
+35: 	String mul_res = null;
+36: 	String necessary = null;
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:363)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:338)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:325)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:580)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 21:36:16.024 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 21:36:16.070 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 21:36:16.078 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 21:36:16.079 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 208 ms
+07-May-2021 21:36:16.089 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 21:36:16.089 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 21:36:16.092 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 21:36:16.365 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:36:16.389 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 296 ms
+07-May-2021 21:36:16.389 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 21:36:16.532 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:36:16.533 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 144 ms
+07-May-2021 21:36:16.533 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 21:36:16.668 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:36:16.669 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 136 ms
+07-May-2021 21:36:16.670 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 21:36:16.675 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 595 ms
+07-May-2021 21:36:53.842 심각 [http-nio-8121-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 95
+
+92: 	}
+93: 	
+94: 	question = new Question(title, type, mul_res, necessary, shuffle);
+95: 	int question_id = dao.insertQuestion(question, option_group_id);
+96: 	%>
+97: 
+98: </body>
+
+
+Stacktrace:] with root cause
+ java.lang.Error: Unresolved compilation problems: 
+	The method isMulti_res() is undefined for the type Question
+	The method isNecessary() is undefined for the type Question
+	The method isShuffle() is undefined for the type Question
+
+	at model.question.QuestionDAO.insertQuestion(QuestionDAO.java:47)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 21:43:09.376 심각 [http-nio-8121-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 95
+
+92: 	}
+93: 	
+94: 	question = new Question(title, type, mul_res, necessary, shuffle);
+95: 	int question_id = dao.insertQuestion(question, option_group_id);
+96: 	%>
+97: 
+98: </body>
+
+
+Stacktrace:] with root cause
+ java.lang.Error: Unresolved compilation problems: 
+	The method isMulti_res() is undefined for the type Question
+	The method isNecessary() is undefined for the type Question
+	The method isShuffle() is undefined for the type Question
+
+	at model.question.QuestionDAO.insertQuestion(QuestionDAO.java:47)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:208)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 21:43:21.535 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 21:43:21.579 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 21:43:21.587 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 21:43:21.588 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 203 ms
+07-May-2021 21:43:21.597 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 21:43:21.597 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 21:43:21.600 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 21:43:21.870 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:43:21.894 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 294 ms
+07-May-2021 21:43:21.894 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 21:43:22.033 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:43:22.034 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 140 ms
+07-May-2021 21:43:22.034 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 21:43:22.168 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:43:22.174 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 140 ms
+07-May-2021 21:43:22.175 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 21:43:22.178 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 590 ms
+07-May-2021 21:44:03.720 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 21:44:03.763 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 21:44:03.770 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 21:44:03.771 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 202 ms
+07-May-2021 21:44:03.781 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 21:44:03.781 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 21:44:03.784 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 21:44:04.053 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:44:04.076 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 292 ms
+07-May-2021 21:44:04.076 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 21:44:04.219 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:44:04.220 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 144 ms
+07-May-2021 21:44:04.220 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 21:44:04.354 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 21:44:04.355 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 135 ms
+07-May-2021 21:44:04.357 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 21:44:04.361 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 589 ms
+07-May-2021 22:12:49.361 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 22:12:49.406 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 22:12:49.413 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 22:12:49.414 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 207 ms
+07-May-2021 22:12:49.424 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 22:12:49.424 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 22:12:49.427 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 22:12:49.699 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 22:12:49.723 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 296 ms
+07-May-2021 22:12:49.723 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 22:12:49.864 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 22:12:49.865 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 142 ms
+07-May-2021 22:12:49.865 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 22:12:49.998 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 22:12:49.999 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 134 ms
+07-May-2021 22:12:50.002 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 22:12:50.005 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 590 ms
+07-May-2021 22:17:17.644 심각 [http-nio-8121-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 128
+
+125: 		
+126: 		for (int i = 0; i < questions.length; i++) {
+127: 			question = new Question(questions[i], type, mul_res, necessary, shuffle);
+128: 			sub_question_id = dao.insertQuestion(question, -1);
+129: 			
+130: 			dao.Matrix(question_id, sub_question_id, i+1);
+131: 		}
+
+
+Stacktrace:] with root cause
+ java.lang.RuntimeException: Cannot add or update a child row: a foreign key constraint fails (`polinsight`.`question`, CONSTRAINT `option_group_id` FOREIGN KEY (`option_group_id`) REFERENCES `option_group` (`option_group_id`))
+	at model.question.QuestionDAO.insertQuestion(QuestionDAO.java:67)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:241)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 22:26:38.445 심각 [http-nio-8121-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /formPro.jsp at line 109
+
+106: 		case "shortanswer": //주관식일때
+107: 			question = new Question(title, type, mul_res, necessary, shuffle);
+108: 			
+109: 			question_id = dao.insertQuestion(question, option_group_id);
+110: 			
+111: 			break;
+112: 		case "matrix": //행렬형일때
+
+
+Stacktrace:] with root cause
+ java.lang.RuntimeException: Cannot add or update a child row: a foreign key constraint fails (`polinsight`.`question`, CONSTRAINT `option_group_id` FOREIGN KEY (`option_group_id`) REFERENCES `option_group` (`option_group_id`))
+	at model.question.QuestionDAO.insertQuestion(QuestionDAO.java:67)
+	at org.apache.jsp.formPro_jsp._jspService(formPro_jsp.java:222)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+07-May-2021 22:36:33.735 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2021 22:36:33.778 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+07-May-2021 22:36:33.786 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2021 22:36:33.787 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 203 ms
+07-May-2021 22:36:33.796 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+07-May-2021 22:36:33.796 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+07-May-2021 22:36:33.799 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+07-May-2021 22:36:34.079 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 22:36:34.105 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 305 ms
+07-May-2021 22:36:34.105 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+07-May-2021 22:36:34.257 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 22:36:34.258 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 153 ms
+07-May-2021 22:36:34.258 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+07-May-2021 22:36:34.401 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+07-May-2021 22:36:34.402 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 144 ms
+07-May-2021 22:36:34.405 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+07-May-2021 22:36:34.415 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 627 ms

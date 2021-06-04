@@ -1,0 +1,249 @@
+01-Jun-2021 13:24:31.626 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 13:24:31.679 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:24:31.690 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 13:24:31.691 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 233 ms
+01-Jun-2021 13:24:31.702 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 13:24:31.702 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 13:24:31.706 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 13:24:33.780 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:24:33.807 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,101 ms
+01-Jun-2021 13:24:33.807 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 13:24:35.648 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:24:35.651 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,844 ms
+01-Jun-2021 13:24:35.651 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 13:24:37.202 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:24:37.203 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,552 ms
+01-Jun-2021 13:24:37.205 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:24:37.208 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5516 ms
+01-Jun-2021 13:39:25.655 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 13:39:25.736 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:39:25.752 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 13:39:25.753 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 313 ms
+01-Jun-2021 13:39:25.764 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 13:39:25.764 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 13:39:25.768 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 13:39:28.726 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:39:28.787 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 3,019 ms
+01-Jun-2021 13:39:28.787 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 13:39:31.501 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:39:31.507 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 2,720 ms
+01-Jun-2021 13:39:31.507 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 13:39:33.594 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:39:33.595 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 2,088 ms
+01-Jun-2021 13:39:33.602 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:39:33.606 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 7852 ms
+01-Jun-2021 13:41:18.870 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 13:41:18.928 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:41:18.946 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 13:41:18.947 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 243 ms
+01-Jun-2021 13:41:18.958 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 13:41:18.958 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 13:41:18.967 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 13:41:21.306 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:41:21.334 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,366 ms
+01-Jun-2021 13:41:21.334 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 13:41:23.211 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:41:23.212 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,878 ms
+01-Jun-2021 13:41:23.212 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 13:41:24.929 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:41:24.930 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,718 ms
+01-Jun-2021 13:41:24.932 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:41:24.944 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 5996 ms
+01-Jun-2021 13:43:22.199 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 13:43:22.258 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:43:22.276 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 13:43:22.282 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 270 ms
+01-Jun-2021 13:43:22.293 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 13:43:22.293 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 13:43:22.296 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 13:43:24.657 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:43:24.697 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,401 ms
+01-Jun-2021 13:43:24.697 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 13:43:26.653 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:43:26.654 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,957 ms
+01-Jun-2021 13:43:26.654 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 13:43:28.425 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:43:28.426 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,772 ms
+01-Jun-2021 13:43:28.427 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:43:28.431 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6149 ms
+01-Jun-2021 13:50:36.793 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 13:50:36.858 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:50:36.878 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 13:50:36.880 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 278 ms
+01-Jun-2021 13:50:36.891 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 13:50:36.891 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 13:50:36.895 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 13:50:39.341 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:50:39.370 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,474 ms
+01-Jun-2021 13:50:39.370 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 13:50:41.403 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:50:41.404 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 2,034 ms
+01-Jun-2021 13:50:41.404 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 13:50:43.307 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:50:43.308 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,904 ms
+01-Jun-2021 13:50:43.311 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:50:43.337 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6457 ms
+01-Jun-2021 13:59:39.445 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 13:59:39.496 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:59:39.514 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 13:59:39.515 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 254 ms
+01-Jun-2021 13:59:39.526 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 13:59:39.526 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 13:59:39.529 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 13:59:41.882 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:59:41.922 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,393 ms
+01-Jun-2021 13:59:41.922 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 13:59:43.848 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:59:43.850 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,928 ms
+01-Jun-2021 13:59:43.850 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 13:59:45.611 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 13:59:45.612 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,761 ms
+01-Jun-2021 13:59:45.614 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 13:59:45.617 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6101 ms
+01-Jun-2021 14:01:15.751 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 14:01:15.803 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:01:15.817 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 14:01:15.818 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 262 ms
+01-Jun-2021 14:01:15.828 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 14:01:15.829 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 14:01:15.835 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 14:01:18.227 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:01:18.261 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,426 ms
+01-Jun-2021 14:01:18.261 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 14:01:20.328 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:01:20.329 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 2,068 ms
+01-Jun-2021 14:01:20.329 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 14:01:22.118 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:01:22.119 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,790 ms
+01-Jun-2021 14:01:22.121 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:01:22.133 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6314 ms
+01-Jun-2021 14:01:52.974 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 14:01:53.034 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:01:53.053 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 14:01:53.054 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 265 ms
+01-Jun-2021 14:01:53.065 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 14:01:53.065 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 14:01:53.069 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 14:01:55.391 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:01:55.425 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,355 ms
+01-Jun-2021 14:01:55.425 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 14:01:57.355 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:01:57.357 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,932 ms
+01-Jun-2021 14:01:57.357 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 14:01:59.148 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:01:59.149 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,792 ms
+01-Jun-2021 14:01:59.151 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:01:59.154 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6099 ms
+01-Jun-2021 14:03:08.234 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 14:03:08.290 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:03:08.305 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 14:03:08.306 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 246 ms
+01-Jun-2021 14:03:08.316 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 14:03:08.316 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 14:03:08.319 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 14:03:10.753 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:03:10.792 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,473 ms
+01-Jun-2021 14:03:10.793 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 14:03:12.750 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:03:12.751 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,958 ms
+01-Jun-2021 14:03:12.751 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 14:03:14.562 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:03:14.565 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,814 ms
+01-Jun-2021 14:03:14.569 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:03:14.572 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6266 ms
+01-Jun-2021 14:03:16.457 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 14:03:16.515 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:03:16.528 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 14:03:16.529 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 260 ms
+01-Jun-2021 14:03:16.539 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 14:03:16.540 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 14:03:16.543 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 14:03:18.891 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:03:18.919 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,376 ms
+01-Jun-2021 14:03:18.919 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 14:03:20.912 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:03:20.913 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,994 ms
+01-Jun-2021 14:03:20.913 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 14:03:22.640 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:03:22.641 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,728 ms
+01-Jun-2021 14:03:22.649 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:03:22.652 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6123 ms
+01-Jun-2021 14:06:01.893 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /home/hosting_users/usr/local/fakechroot/lib/fakechroot:/usr/local/fakechroot/lib/fakechroot:/home/hosting_users/usr/lib:/home/hosting_users/lib:/usr/local/mysql/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+01-Jun-2021 14:06:01.956 정보 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:06:01.976 정보 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+01-Jun-2021 14:06:01.977 정보 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 354 ms
+01-Jun-2021 14:06:01.988 정보 [main] org.apache.catalina.core.StandardService.startInternal Starting service polinsight
+01-Jun-2021 14:06:01.988 정보 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.50
+01-Jun-2021 14:06:01.992 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/host-manager
+01-Jun-2021 14:06:04.320 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:06:04.346 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/host-manager has finished in 2,354 ms
+01-Jun-2021 14:06:04.346 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/manager
+01-Jun-2021 14:06:06.276 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:06:06.278 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/manager has finished in 1,932 ms
+01-Jun-2021 14:06:06.278 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /polinsight/tomcat/webapps/ROOT
+01-Jun-2021 14:06:08.092 정보 [polinsight.cafe24.com-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+01-Jun-2021 14:06:08.093 정보 [polinsight.cafe24.com-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /polinsight/tomcat/webapps/ROOT has finished in 1,815 ms
+01-Jun-2021 14:06:08.094 정보 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8121"]
+01-Jun-2021 14:06:08.100 정보 [main] org.apache.catalina.startup.Catalina.start Server startup in 6122 ms
+01-Jun-2021 17:13:41.965 심각 [http-nio-8121-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ArrayIndexOutOfBoundsException: -1] with root cause
+ java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.elementData(ArrayList.java:418)
+	at java.util.ArrayList.get(ArrayList.java:431)
+	at org.apache.jsp.survey_jsp._jspService(survey_jsp.java:439)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+01-Jun-2021 22:05:16.281 심각 [http-nio-8121-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.NullPointerException] with root cause
+ java.lang.NullPointerException
+	at sun.misc.CharacterDecoder.decodeBuffer(CharacterDecoder.java:187)
+	at model.encrypt.LocalEncrypter.returnDecryptCode(LocalEncrypter.java:40)
+	at org.apache.jsp.makeForm_jsp._jspService(makeForm_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:502)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1132)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1539)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1495)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
